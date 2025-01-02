@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.wheel-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+        #ff5733, #ffc300, #75ff33, #33fff0, #3359ff, #a833ff, #ff33a8, #ff5733
+    );
+    transition: transform 0.5s ease-in-out;
+}
+
+.wheel:hover {
+    transform: rotate(360deg);
+}
